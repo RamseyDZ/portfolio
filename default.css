@@ -1,6 +1,6 @@
 :root{
     --mainText: #0f0a09;
-    --bodyText: #e28484;
+    --bodyText: #413939;
 
     --borderColor: #c1c1c1;
     
@@ -11,6 +11,8 @@
 
     --previewBg: rgb(251,249,243,0.8);
     --previewShadow: #f0ead6;
+
+    --btnSubmit: black;
 }
 
 html, body{
@@ -239,6 +241,95 @@ ul{
     bottom: -5px;
     left: -5px;
 }
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+    padding-bottom: 50px;
+    padding-top: 50px;
+    gap: 100px;
+}
+
+.social-links{
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+#skills{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
+}
+
+#social-img{
+    width: 100%;
+}
+
+.diploms-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap:20px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.diploms{
+    border: 1px solid var(--borderColor);
+    -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+}
+
+.thumbnail{
+    display: block;
+    width:100%; 
+    height: 180px;
+    object-fit: cover;
+}
+
+.diplom-preview{
+    background-color: #fff;
+    padding: 5px;
+}
+.diplom-title{
+    color: #0f0a09;
+    margin: 0px;
+}
+.diplom-intro{
+    color: #0f0a09;
+    font-size: 14px;
+}
+
+#contact-form{
+    display: block;
+    max-width: 600px;
+    margin: 0 auto; 
+    border: 1px solid var(--borderColor); 
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    margin-bottom: 50px;
+}
+
+.input-field{
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    border: 1px solid var(--borderColor);        
+    font-size: 14px;
+}
+#btn-submit{
+    margin-top: 10px; 
+    width: 100%; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    background-color: var(--btnSubmit);
+    border: none;
+}
+
 @media screen and (max-width: 1200px){
     .main-container{
         width: 95%;

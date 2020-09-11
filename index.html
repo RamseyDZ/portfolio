@@ -5,7 +5,8 @@
     <title>Ramzi BOUCHAIR WEB site</title>
     <meta name="viewport" content="width=device-width,
              initial-scale=1, maximum-scale=1, minimum-scale=1" />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Recursive&family=Source+Code+Pro:wght@300&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand&family=Recursive&family=Source+Code+Pro:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="default.css">
 </head>
@@ -58,19 +59,119 @@
 
     <section class="sec2">
         <div class="main-container">
-            About
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More about me</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                    </p>
+                    <p>
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt
+                        in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <hr>
+                    <h4>TOP EXPERTIES</h4>
+                    <p>Fullstack developper with primary focus on NodeJs + Angular:
+                        <a target="_blank" href="img/BOUCHAIR_Ramzi_CV_2020.pdf">Download resume</a>
+                    </p>
+
+                    <div id="skills">
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>C &#x00023;</li>
+                            <li>Node Js</li>
+                            <li>PhP</li>
+                        </ul>
+
+                        <ul>
+                            <li>Angular</li>
+                            <li>React</li>
+                            <li>JQuery</li>
+                            <li>Flutter</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <img id="social-img" src="img/do_or_do_not_ramsey.jpg">
+                    <h3>Find me on twitter & LinkedIn</h3>
+
+                    <a target="_blank" href="#">twitter: BOUCHAIR Ramzi</a>
+                    <br>
+                    <a target="_blank" href="#">LinkedIn: BOUCHAIR Ramzi</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="sec1">
         <div class="main-container">
-            Cursus
+            <h3 style="text-align:center;"  > My studies and diploms</h3>
+
+            <div class="diploms-wrapper">
+                <div>
+                    <div class="diploms">
+                        <img id="ISIL" class="thumbnail" src="img/isil.jpg">
+                        <div class="diplom-preview">
+                            <h6 class="diplom-title">Licence: ISIL</h6>
+                            <P class="diplom-intro">Licence informatique "Ingénierie de système informatique et
+                                logiciels"
+                                <b>USTHB</b> <i>2013</i> </P>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="diploms">
+                        <img id="SII" class="thumbnail" src="img/SII.jpg">
+                        <div class="diplom-preview">
+                            <h6 class="diplom-title">Master2: SII</h6>
+                            <P class="diplom-intro">Master "Intelligence Artificiel" <b>USTHB</b> <i>2016</i>
+                            </P>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="diploms">
+                        <img id="GIL" class="thumbnail" src="img/GIL.webp">
+                        <div class="diplom-preview">
+                            <h6 class="diplom-title">Master1: GIL</h6>
+                            <P class="diplom-intro">Master informatique "Génie informatique et logiciels" <b>UFR
+                                    Rouen</b> <i>2020</i></P>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="sec2">
         <div class="main-container">
-            Portfolio
+            <h3 style="text-align:center;"  >Get in touch with me</h3>
+            <form id="contact-form"> 
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
+
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
+
+                <label>Email</label>
+                <input class="input-field" type="text" name="email">
+
+                <label>Message</label>
+                <textarea class="input-field" type="text" name="message">
+                
+                </textarea>
+                
+                <input id="btn-submit" type="submit" value="send">
+            </form>
         </div>
     </section>
 
