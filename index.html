@@ -5,10 +5,13 @@
     <title>Ramzi BOUCHAIR WEB site</title>
     <meta name="viewport" content="width=device-width,
              initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
     <link
         href="https://fonts.googleapis.com/css2?family=Quicksand&family=Recursive&family=Source+Code+Pro:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="default.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="default.css">
 </head>
 
 <body>
@@ -33,13 +36,15 @@
                     <img id="profile_image" src="img/Ramsey_Profile.jpg">
                     <h5 style="text-align: center; line-height: 0;">Choisir un thème</h5>
                     <div id="theme-option-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="orange-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="dark" id="dark-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="orange" id="orange-mode" class="theme-dot"></div>
                     </div>
                     <p id="setting-note">* Ce thème sera enregistré pour <br>tes prochaines visites</p>
                 </div>
                 <div class="right-column">
+                    <!--Old présentation card -->
                     <div class="preview-shadow">
                         <div id="preview">
                             <div id="corner-tl" class="corner"></div>
@@ -50,6 +55,21 @@
                             </p>
                             <div id="corner-br" class="corner"></div>
                             <div id="corner-bl" class="corner"></div>
+                        </div>
+                    </div>
+                    <!--New présentation card 3D -->
+                    <div class="wrapper">
+                        <div class="box">
+                            <div class="front-face">
+                                <div class="icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <span>WEB developper</span>
+                            </div>
+                            <div class="back-face">
+                                <span>WEB developper</span>
+                                <p>I am a Full stack web developper, and specially NodeJs, Angular, React, javascript and typescript</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -114,7 +134,7 @@
 
     <section class="sec1">
         <div class="main-container">
-            <h3 style="text-align:center;"  > My studies and diploms</h3>
+            <h3 style="text-align:center;"> My studies and diploms</h3>
 
             <div class="diploms-wrapper">
                 <div>
@@ -154,8 +174,8 @@
 
     <section class="sec2">
         <div class="main-container">
-            <h3 style="text-align:center;"  >Get in touch with me</h3>
-            <form id="contact-form"> 
+            <h3 style="text-align:center;">Get in touch with me</h3>
+            <form id="contact-form">
                 <label>Name</label>
                 <input class="input-field" type="text" name="name">
 
@@ -167,9 +187,9 @@
 
                 <label>Message</label>
                 <textarea class="input-field" type="text" name="message">
-                
+
                 </textarea>
-                
+
                 <input id="btn-submit" type="submit" value="send">
             </form>
         </div>
@@ -180,6 +200,7 @@
             Contact
         </div>
     </section>
+    <script type="text/javascript" src="js/theme-styler.js"></script>
 </body>
 
 </html>
