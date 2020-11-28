@@ -6,11 +6,13 @@
     
     --mainText: #cfcfcf;
     --bodyText: #fff;
+    --devBlock: #414141;
 
     --themeDotBorder: #24292e;
 
     --previewBg: rgb(251,249,243,0.8);
-    --previewShadow: #f0ead6;
+    --previewShadow: #858482;
+    
 
     --btnSubmit: #706e6e;
 }

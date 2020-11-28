@@ -1,11 +1,12 @@
 :root{
-    --mainText: #f86a15;
-    --bodyText: #ffd868;
+    --mainText: #b80d57;
+    --bodyText: #721b65;
+    --devBlock: #8f4204;
 
     --borderColor: #fbfbff;
     
-    --mainColor: #b80d57;
-    --secondaryColor: #721b65;
+    --mainColor: #f86a15;
+    --secondaryColor: #ffd868;
 
     --themeDotBorder: #e0e1e2;
 
