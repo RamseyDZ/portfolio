@@ -135,9 +135,10 @@ ul{
 
 .nav-wrapper .btn-wrapper span{
     position: absolute; 
-    z-index: 01;
+    z-index: 99;
     border-radius: 80px;
     font-size: 20px;
+    font-weight: bold;
     text-align: center;
     width: 200px;  
     line-height: 70px;
